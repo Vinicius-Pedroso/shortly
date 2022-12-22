@@ -13,8 +13,8 @@ app.use(express.json)
 
 app.use(routerSigns);
 app.use(routerUrls);
-app.use(routerUsers);
-app.use(routerRankings)
+//app.use(routerUsers);
+//app.use(routerRankings)
 
 const port = process.env.PORT;
 app.listen(port, ()=> console.log(`server running on port ${port}`))
