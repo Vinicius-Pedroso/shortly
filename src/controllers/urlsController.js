@@ -1,4 +1,4 @@
-import { connectionDB } from "../database.js"
+import connectionDB from "../database.js"
 
 export async function urlsShortenPost (req, res){
     const {url} = req.body

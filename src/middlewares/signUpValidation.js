@@ -1,8 +1,9 @@
 import { signUpSchema } from "../schemas/signUpSchema.js";
-import { connectionDB } from "../database.js";
+import connectionDB from "../database.js";
 
 export async function signUpValidation(req, res, next) {
   const {name, email, password, confirmPassword} = req.body
+  console.log("entrou na validation")
 
   const { error } = signUpSchema.validate({name, email, password, confirmPassword});
 

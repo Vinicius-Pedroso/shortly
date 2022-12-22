@@ -1,5 +1,5 @@
 import { signInSchema } from "../schemas/signInSchema.js";
-import { connectionDB } from "../database.js";
+import connectionDB from "../database.js";
 
 export async function signInValidation(req, res, next) {
   const {email, password} = req.body
