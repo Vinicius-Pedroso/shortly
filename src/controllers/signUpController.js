@@ -1,6 +1,6 @@
 import { connectionDB } from "../database.js"
 
-export async function signUp (req, res){
+export async function signUpController (req, res){
     const {name, email, password} = req.body
     console.log("entrou")
 

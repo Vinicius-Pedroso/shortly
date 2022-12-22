@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { signUp } from "../controllers/signup.js";
+import { signUpController } from "../controllers/signup.js";
+import { signUpValidation } from "../middlewares/signUpValidation.js";
 
 const routerSigns = Router()
 
-routerSigns.post("/signup", signUp);
+routerSigns.post("/signup", signUpValidation, signUpController);
 routerSigns.post("/signin", );
 
 export default routerSigns;
