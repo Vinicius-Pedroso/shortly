@@ -11,3 +11,5 @@ export async function signInController (req, res){
         return res.sendStatus(500)
     }
 }
+
+//configurar token jws
