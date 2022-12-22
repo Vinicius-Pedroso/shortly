@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { signUp } from "../controllers/signup";
+import { signUp } from "../controllers/signup.js";
 
-const router = Router()
+const routerSigns = Router()
 
-router.post("/signup", signUp);
-router.post("/signin", );
+routerSigns.post("/signup", signUp);
+routerSigns.post("/signin", );
 
-export default router;
+export default routerSigns;
