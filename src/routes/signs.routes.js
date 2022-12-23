@@ -10,3 +10,4 @@ routerSigns.post("/signup", signUpValidation, signUpController);
 routerSigns.post("/signin", signInValidation, signInController);
 
 export default routerSigns;
+
