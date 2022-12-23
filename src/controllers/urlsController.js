@@ -1,10 +1,12 @@
 import connectionDB from "../database.js"
+import { nanoid } from 'nanoid'
 
 export async function urlsShortenPost (req, res){
-    const {url} = req.body
+    const {url} = req.body;
     const { authorization } = req.headers;
     const token = authorization?.replace("Bearer ", "");
-    console.log("entrou")
+
+    model.id = nanoid()
 
     //nanoId + jsw token
 }
@@ -21,7 +23,6 @@ export async function urlsIdGet (req, res){
 export async function urlsOpenGet (req, res){
     
     console.log("entrou")
-
     
 }
 export async function urlsIdDelete (req, res){
