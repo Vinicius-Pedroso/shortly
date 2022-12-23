@@ -1,4 +1,4 @@
-import connectionDB from "../database.js"
+import { connectionDB } from "../database.js"
 import { nanoid } from 'nanoid'
 
 export async function urlsShortenPost (req, res){

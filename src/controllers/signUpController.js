@@ -1,4 +1,4 @@
-import connectionDB from "../database.js"
+import { connectionDB } from "../database.js"
 
 export async function signUpController (req, res){
     const {name, email, password} = req.body
